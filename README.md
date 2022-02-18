@@ -6,3 +6,4 @@
 * 11:20: research how to use react front end with c# backend
 * 1:40: continued research on using react front end with c# backened
 * 2:15: researching incorporating messenger app possibly
+* 3:15: continued research incorporating messenger app possibly
