@@ -5,3 +5,4 @@
 * 10:20: continued research on firebase
 * 11:20: research how to use react front end with c# backend
 * 1:40: continued research on using react front end with c# backened
+* 2:15: researching incorporating messenger app possibly
