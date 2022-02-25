@@ -13,3 +13,4 @@
 * 8:00: updating capstone proposal
 * 9:10: re-watching videos on firebase
 * 10:00: continued research on firebase
+* 11:30 continued reserarch with incorporating chat functionality
