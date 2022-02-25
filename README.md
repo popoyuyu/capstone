@@ -15,3 +15,4 @@
 * 10:00: continued research on firebase
 * 11:30: continued reserarch with incorporating chat functionality
 * 1:20: continue studying on chat functionality
+* 2:50: research on map sharing using googles map api
