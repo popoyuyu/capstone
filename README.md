@@ -9,3 +9,4 @@
 * 3:15: continued research incorporating messenger app possibly
 * 4:00: initial research on map sharing maybe using google?
 * 8:00: updating capstone proposal
+* 9:10: re-watching videos on firebase
