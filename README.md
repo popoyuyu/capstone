@@ -17,3 +17,4 @@
 * 1:20: continue studying on chat functionality
 * 2:50: research on map sharing using googles map api
 * 4:05: still researching incorporating google map api
+* 4:50: most likely doing firebase backenend with react front end notes
