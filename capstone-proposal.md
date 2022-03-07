@@ -12,7 +12,8 @@ List the absolute minimum features the project requires to meet this purpose or 
 
 What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 - React Frontend
-- C# backened 
+- C# backened?
+- Most likely firebase backened
 - MySQL
 
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
@@ -25,7 +26,7 @@ What additional tools, frameworks, libraries, APIs, or other resources will thes
 - MySQL workbench
 - JavaScript
 - firebase
-- map api (google, openlayers, tomtom, mapbox, HERE, mapfit) might pivot from google because it's not free and the other ones seem to function the same way i'd want it to
+- map api (google, openlayers, tomtom, mapbox, HERE, mapfit) might pivot from google because it's not free and the other ones seem to function the same way i'd want it to. Will require some futher research.
 
 Is there anything else you'd like your instructor to know?
 - Hopefully this project isn't beyond my capabilities
