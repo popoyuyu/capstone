@@ -55,6 +55,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ### Monday, 03/07
 * 9:00: cont research on openlayers
+* 10:00: research on tomtom api
 ## License
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy
