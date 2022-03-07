@@ -57,6 +57,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 9:00: cont research on openlayers
 * 10:00: research on tomtom api
 * 11:15: cont testing with tomtom api.
+* 2:30: research testing with mapbox
 
 ## License
 
