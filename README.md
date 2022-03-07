@@ -50,6 +50,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ### Sunday, 03/06
 * 8:00: updating capstone proposal
 * 9:00: update readme
+* 10:00: research with using openlayers map api
 
 ## License
 
