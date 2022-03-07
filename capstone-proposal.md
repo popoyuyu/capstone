@@ -17,7 +17,7 @@ What tools, frameworks, libraries, APIs, modules and/or other resources (whateve
 
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 - Messenger chat function for users to directly contact each other with
-- Integrated map showing location of each users prefrence of gym location maybe using googles map api
+- Integrated map showing location of each users prefrence of gym location maybe using googles map api or openlayers seems like a good 2nd choice. If these don't work there is a list of potential apis I could use.
 - Host on firebase 
 
 What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
@@ -25,6 +25,7 @@ What additional tools, frameworks, libraries, APIs, or other resources will thes
 - MySQL workbench
 - JavaScript
 - firebase
+- map api (google, openlayers, tomtom, mapbox, HERE, mapfit) might pivot from google because it's not free and the other ones seem to function the same way i'd want it to
 
 Is there anything else you'd like your instructor to know?
 - Hopefully this project isn't beyond my capabilities
