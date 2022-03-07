@@ -51,7 +51,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 8:00: updating capstone proposal
 * 9:00: update readme
 * 10:00: research with using openlayers map api
-
+* 11:00: cont. research on openlayers
 ## License
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy
