@@ -28,7 +28,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Research & Planning Log
 <details>
-<summary>#### Friday, 02/18</summary>
+<summary>Friday, 02/18</summary>
 
 * 8:30: prioritize initial MVP and stretch goals
 * 9:30: research on potentialy using firebase for backend
@@ -41,7 +41,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 </details>
 
 <details>
-<summary>#### Friday, 02/25</summary>
+<summary>Friday, 02/25</summary>
 * 8:00: updating capstone proposal
 * 9:10: re-watching videos on firebase
 * 10:00: continued research on firebase
@@ -53,7 +53,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 </details>
 
 <details>
-<summary>#### Sunday, 03/06</summary>
+<summary>Sunday, 03/06</summary>
 * 8:00: updating capstone proposal
 * 9:00: update readme
 * 10:00: research with using openlayers map api
@@ -61,7 +61,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 </details>
 
 <details>
-<summary>#### Monday, 03/07</summary>
+<summary>Monday, 03/07</summary>
 * 9:00: cont research on openlayers
 * 10:00: research on tomtom api
 * 11:15: cont testing with tomtom api.
@@ -72,12 +72,12 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 </details>
 
 <details>
-<summary>##### Tuesday, 03/08</summary>
+<summary>Tuesday, 03/08</summary>
 * 8:20: implementing firebase from watching youtube / learn how to program
 </details>
 
-<details>
 ## Getting Started with Create React App
+<details>
 <summary>Getting Started with Create React App</summary>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
