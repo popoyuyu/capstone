@@ -62,6 +62,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 5:15: cont research with mapbox
 * 9:00 - 11:00: watching videos refresh on firebase
 
+### Tuesday, 03/08
+* 8:20: implementing firebase from watching youtube / learn how to program
+
 ## License
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy
