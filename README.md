@@ -59,6 +59,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 11:15: cont testing with tomtom api.
 * 2:30: research testing with mapbox
 * 4:00: cont testing with mapbox
+* 5:00: cont research with mapbox
 
 ## License
 
