@@ -74,6 +74,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 <details>
 <summary>Tuesday, 03/08</summary>
 * 8:20: implementing firebase from watching youtube / learn how to program
+* 3:00-5:00: watching youtube on firebase auth
 </details>
 
 ## Getting Started with Create React App
