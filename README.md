@@ -38,10 +38,13 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 2:15: researching incorporating messenger app possibly
 * 3:15: continued research incorporating messenger app possibly
 * 4:00: initial research on map sharing maybe using google?
+
+* Total: 7 hours
 </details>
 
 <details>
 <summary>Friday, 02/25</summary>
+
 * 8:00: updating capstone proposal
 * 9:10: re-watching videos on firebase
 * 10:00: continued research on firebase
@@ -50,18 +53,24 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 2:50: research on map sharing using googles map api
 * 4:05: still researching incorporating google map api
 * 4:50: most likely doing firebase backenend with react front end notes
+
+* Total: 8 hrs
 </details>
 
 <details>
 <summary>Sunday, 03/06</summary>
+
 * 8:00: updating capstone proposal
 * 9:00: update readme
 * 10:00: research with using openlayers map api
 * 11:00: cont. research on openlayers
+
+* Total: 3 hrs
 </details>
 
 <details>
 <summary>Monday, 03/07</summary>
+
 * 9:00: cont research on openlayers
 * 10:00: research on tomtom api
 * 11:15: cont testing with tomtom api.
@@ -69,12 +78,17 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 4:00: cont testing with mapbox
 * 5:15: cont research with mapbox
 * 9:00 - 11:00: watching videos refresh on firebase
+
+* Total: 10 hrs
 </details>
 
 <details>
 <summary>Tuesday, 03/08</summary>
+
 * 8:20: implementing firebase from watching youtube / learn how to program
 * 3:00-5:00: watching youtube on firebase auth
+
+* Total: 8 hrs
 </details>
 
 ## Getting Started with Create React App
