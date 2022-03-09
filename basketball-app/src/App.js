@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import './App.css';
 import { auth } from './firebase';
+import { Form } from './components'
 
 function App() {
 
@@ -38,21 +39,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div>
-        <h3> Register User</h3>
-        <input placeholder='Email...'
-          onChange={(event) => {
-            setRegisterEmail(event.target.value);
-          }}
-        />
-        <input type="password" placeholder='Password...'
-          onChange={(event) => {
-            setRegisterPassword(event.target.value);
-          }}
-        />
-
-        <button onClick={register}>Create User</button>
-      </div>
+      <Form title='Register User' onSetEmail={setRegisterEmail} onSetPassword={setRegisterPassword} onSubmit={register} buttonText='Create User' />
 
       <div>
         <h3>Login</h3>
