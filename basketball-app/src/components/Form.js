@@ -5,7 +5,7 @@ export const Form = ({ title, onSetEmail, onSetPassword, onSubmit, buttonText })
   return (
     <div>
       <h3>{title}</h3>
-      <input placeholder='Email...'
+      <input placeholder='Email...' type='email'
         onChange={(event) => {
           onSetEmail(event.target.value);
         }}

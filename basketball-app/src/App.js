@@ -5,7 +5,6 @@ import { auth } from './firebase';
 import { Form } from './components'
 
 function App() {
-
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
@@ -40,22 +39,7 @@ function App() {
   return (
     <div className="App">
       <Form title='Register User' onSetEmail={setRegisterEmail} onSetPassword={setRegisterPassword} onSubmit={register} buttonText='Create User' />
-
-      <div>
-        <h3>Login</h3>
-        <input placeholder='Email...'
-          onChange={(event) => {
-            setLoginEmail(event.target.value);
-          }}
-        />
-        <input type="password" placeholder='Password...'
-          onChange={(event) => {
-            setLoginPassword(event.target.value);
-          }}
-        />
-
-        <button onClick={login}>Login</button>
-      </div>
+      <Form title='Login' onSetEmail={setLoginEmail} onSetPassword={setLoginPassword} onSubmit={login} buttonText='Login' />
 
       <h4>User Logged In: </h4>
       {user?.email}
