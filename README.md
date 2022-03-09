@@ -8,6 +8,7 @@
 
 * _React_
 * _Firebase_
+* _Firestore_
 * _HTML_
 * _CSS_
 
