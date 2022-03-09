@@ -45,7 +45,7 @@ function App() {
             setRegisterEmail(event.target.value);
           }}
         />
-        <input placeholder='Password...'
+        <input type="password" placeholder='Password...'
           onChange={(event) => {
             setRegisterPassword(event.target.value);
           }}
@@ -61,7 +61,7 @@ function App() {
             setLoginEmail(event.target.value);
           }}
         />
-        <input placeholder='Password...'
+        <input type="password" placeholder='Password...'
           onChange={(event) => {
             setLoginPassword(event.target.value);
           }}
@@ -71,7 +71,7 @@ function App() {
       </div>
 
       <h4>User Logged In: </h4>
-      {user?.email}.
+      {user?.email}
 
       <button onClick={logout}> Sign Out</button>
     </div>
