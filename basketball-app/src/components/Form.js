@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-export const Form = ({ title, onSetEmail, onSetPassword, onSubmit, buttonText }) => {
+function Form({ title, onSetEmail, onSetPassword, onSubmit, buttonText }) {
   return (
     <div>
       <h3>{title}</h3>
@@ -20,3 +20,4 @@ export const Form = ({ title, onSetEmail, onSetPassword, onSubmit, buttonText })
     </div>
   )
 }
+export { Form }
