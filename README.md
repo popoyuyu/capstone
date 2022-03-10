@@ -36,13 +36,9 @@ REACT_APP_FIREBASE_APP_ID = "[YOUR-APP-ID]"
 * _run `npm run start`_
 * _In your web browser navigate to `localhost:3000`_
 
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Filter/search functionality currently lists anyone with any of the filters matched_
 
 
 ## Research & Planning Log
@@ -113,7 +109,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 <details>
 <summary>Thursday, 03/10</summary>
 
-* 
+* 10:00 - 11:00: research on applying chat application
 
 </details>
 
