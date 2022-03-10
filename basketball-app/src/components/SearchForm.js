@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Grid from '@mui/material/Grid'
 import { searchProfiles } from '../firebase'
+import { ProfileDetails } from './ProfileDetails'
 
 function SearchForm() {
   const [searchResult, setSearchResult] = useState([])
@@ -22,12 +23,12 @@ function SearchForm() {
       pickup: target.pickup.checked,
     }
     const results = await searchProfiles(query)
-    console.log({ results })
+    setSearchResult(results)
   }
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <h2>Filter by:</h2>
         <form onSubmit={onSubmit}>
           <h4>Select Levels:</h4>
@@ -63,9 +64,15 @@ function SearchForm() {
           <button type="submit">Search!</button>
         </form>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={8}>
         <h2>Results</h2>
-
+        <Grid container spacing={1}>
+          {searchResult.map(profile => (
+            <Grid item xs={6}>
+              <ProfileDetails profile={profile} />
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Grid>
   )
