@@ -1,7 +1,6 @@
 Name of Student: Jeff Lai
 
-Name of Project: Pickup / Training app (might change name later)
-
+Name of Project: Basketball Linkup
 Project's Purpose or Goal: (What will it do for users?)
 - This project is meant for basketball players to be able to connect with each other to either train together or get a squad together for pickup basketball. Users will be able to login and input their information and filter search and match with other users with similar skills / level / time / location. From there users can contact each other via email or if I'm able to integrate a messenger chat function in the website itself. If possilbe the app will also display a map of where users prefered location of playing is at.
 
