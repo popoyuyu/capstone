@@ -21,7 +21,7 @@ function App() {
         {user?.email}
 
         <button onClick={logout}> Sign Out</button>
-        <ProfileScreen />
+        <ProfileScreen user={user} />
       </>
     )
   } else {

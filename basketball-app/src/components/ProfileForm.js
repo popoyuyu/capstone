@@ -1,7 +1,10 @@
 import React from 'react'
 import { setProfile } from '../firebase'
 
-function ProfileForm({ userId }) {
+function ProfileForm(props) {
+
+  const userId = props.userId
+  const setProfileState = props.setProfileState
 
   const onSubmit = e => {
     e.preventDefault()
@@ -15,8 +18,8 @@ function ProfileForm({ userId }) {
       training: target.training.checked,
       pickup: target.pickup.checked,
     }
-    console.log({ userId })
-    // setProfile(userId, profileData)
+    setProfile(userId, profileData)
+    setProfileState(profileData)
   }
 
   return (

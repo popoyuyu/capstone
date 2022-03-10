@@ -18,26 +18,23 @@ const db = getFirestore()
 export const auth = getAuth(app);
 
 async function getProfile(userId) {
+  console.log('performing GET profile')
   const docRef = doc(db, 'Profile', userId)
   const profile = await getDoc(docRef)
 
-  return profile
+  if (profile.exists()) {
+    return profile.data()
+  } else {
+    return null
+  }
 }
 
-/*
-  const profileData = {
-    name: 'test',
-    email: 'test@test.com'
-    // ...
-  }
-  setProfile('123', profileData)
-*/
-
 async function setProfile(userId, profileData) {
+  console.log('performing SET profile')
   const docRef = doc(db, 'Profile', userId)
   const profile = await setDoc(docRef, profileData)
 
   return profile
 }
 
-export { getProfile, setProfile}
+export { getProfile, setProfile }
