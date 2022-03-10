@@ -1,4 +1,4 @@
-# _Capstone_
+# _Basketball Linkup_
 
 #### By _**Jeff Lai**_
 
@@ -6,19 +6,36 @@
 
 ## Technologies Used
 
+* _NPM_
+* _WebPack_
+* _JavaScript_
 * _React_
 * _Firebase_
 * _Firestore_
-* _MaterUI_
+* _NoSQL_
 * _HTML_
 * _CSS_
 
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop._
-* _Navigate to the top level of directory._
-* _Open index.html in your browser._
+* _Download or clone this repository `https://github.com/popoyuyu/capstone.git`_
+* _Navigate into project directory: `cd basketball-app` and run `npm install` to set up environment and npm packages_
+* _Create a new firebase project at `https://firebase.google.com/`_
+* _in your root directory create a file `.env` and paste the following code:_
+```
+REACT_APP_FIREBASE_API_KEY = "[YOUR-KEY]"
+REACT_APP_FIREBASE_AUTH_DOMAIN = "[YOUR-AUTH-DOMAIN].firebaseapp.com"
+REACT_APP_FIREBASE_DATABASE_URL = "https://[YOUR-DATABASE-URL].firebaseio.com"
+REACT_APP_FIREBASE_PROJECT_ID = "[YOUR-PROJECT-ID]"
+REACT_APP_FIREBASE_STORAGE_BUCKET = "[YOUR-STORAGE-BUCKET].appspot.com"
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID = "[YOUR-MESSAGING-ID]"
+REACT_APP_FIREBASE_APP_ID = "[YOUR-APP-ID]"
+```
+* _replace placeholders with your own information from Firebase_
+* _run `npm run start`_
+* _In your web browser navigate to `localhost:3000`_
+
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
@@ -91,6 +108,13 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * 3:00-5:00: watching youtube on firebase auth
 
 * Total: 8 hrs
+</details>
+
+<details>
+<summary>Thursday, 03/10</summary>
+
+* 
+
 </details>
 
 ## Getting Started with Create React App
