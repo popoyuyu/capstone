@@ -1,3 +1,4 @@
+import { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore'
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -12,5 +13,20 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore()
 
 export const auth = getAuth(app);
+
+async function getProfile(userId) {
+  const docRef = doc(db, 'Profile', userId)
+  const profile = await getDoc(docRef)
+
+  return profile
+}
+
+async function setProfile(userId, profileData) {
+  const docRef = doc(db, 'Profile', userId)
+  const profile = await setDoc(docRef, profileData)
+
+  return profile
+}
