@@ -1,4 +1,4 @@
-import { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore'
+import { collection, query, where, getFirestore, doc, setDoc, getDoc } from 'firebase/firestore'
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -37,4 +37,63 @@ async function setProfile(userId, profileData) {
   return profile
 }
 
-export { getProfile, setProfile }
+/**
+ * query = {
+ *  beginner: boolean
+ *  intermediate: boolean
+ *  advanced: boolean
+ *  morning: boolean
+ *  afternoon: boolean
+ *  night: boolean
+ *  training: boolean
+ *  pickup: boolean
+ *  seattle: boolean
+ *  renton: boolean
+ *  bellend: boolean
+ * }
+ * 
+ */
+
+const keyMap = {
+  beginner: 'location',
+  intermediate: 'location',
+  advanced: 'location',
+
+  morning: 'time',
+  afternoon: 'time',
+  night: 'time',
+
+  seattle: 'location',
+  renton: 'location',
+  bellevue: 'location',
+}
+
+function constructQueries(queryObject) {
+  const profileRef = collection(db, 'Profile')
+  const queries = []
+
+  for (const key in queryObject) {
+    if (queryObject[key]) {
+      const query = query(profileRef, where(keyMap[key], '==', key))
+      queries.push(query)
+    }
+  }
+
+  return queries
+}
+
+async function searchProfiles(queryObject) {
+  console.log('perfoming search')
+  const res = []
+
+  const profileRef = collection(db, 'Profile')
+  const queries = constructQueries(query)
+  const data = queries.forEach(async q => {
+    const querySnapshot = await getDocs(q)
+    querySnapshot.forEach(doc => res.push(doc.data()))
+  })
+
+  return res
+}
+
+export { getProfile, setProfile, searchProfiles }
