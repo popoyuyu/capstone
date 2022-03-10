@@ -1,4 +1,4 @@
-import { collection, query, where, getFirestore, doc, setDoc, getDoc } from 'firebase/firestore'
+import { collection, query, where, getFirestore, doc, setDoc, getDoc, getDocs } from 'firebase/firestore'
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -68,31 +68,25 @@ const keyMap = {
   bellevue: 'location',
 }
 
-function constructQueries(queryObject) {
-  const profileRef = collection(db, 'Profile')
-  const queries = []
+async function searchProfiles(queryObject) {
+  console.log('perfoming search')
 
-  for (const key in queryObject) {
+  const res = []
+
+  for await (const key of Object.keys(queryObject)) {
     if (queryObject[key]) {
-      const query = query(profileRef, where(keyMap[key], '==', key))
-      queries.push(query)
+      const constructedQuery = query(collection(db, 'Profile'), where(keyMap[key], '==', key))
+      const querySnapshot = await getDocs(constructedQuery)
+      querySnapshot.forEach(doc => {
+        const data = doc.data()
+        console.log({ data })
+        res.push(data)
+        console.log('hit')
+      })
     }
   }
 
-  return queries
-}
-
-async function searchProfiles(queryObject) {
-  console.log('perfoming search')
-  const res = []
-
-  const profileRef = collection(db, 'Profile')
-  const queries = constructQueries(query)
-  const data = queries.forEach(async q => {
-    const querySnapshot = await getDocs(q)
-    querySnapshot.forEach(doc => res.push(doc.data()))
-  })
-
+  console.log({ res })
   return res
 }
 
