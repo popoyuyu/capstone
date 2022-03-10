@@ -1,4 +1,4 @@
-import { AuthenticationScreen } from "../screens"
+import { AuthenticationScreen, ProfileScreen } from "../screens"
 
 export const routes = {
   main: {
@@ -7,7 +7,7 @@ export const routes = {
   },
   profile: {
     path: '/profile',
-    element: <>profile</>,
+    element: <ProfileScreen />,
   },
   search: {
     path: '/search',
