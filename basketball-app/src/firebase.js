@@ -13,7 +13,7 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore()
+const db = getFirestore(app)
 
 export const auth = getAuth(app);
 
@@ -55,9 +55,9 @@ async function setProfile(userId, profileData) {
  */
 
 const keyMap = {
-  beginner: 'location',
-  intermediate: 'location',
-  advanced: 'location',
+  beginner: 'selectLevel',
+  intermediate: 'selectLevel',
+  advanced: 'selectLevel',
 
   morning: 'time',
   afternoon: 'time',
@@ -66,27 +66,28 @@ const keyMap = {
   seattle: 'location',
   renton: 'location',
   bellevue: 'location',
+
+  pickup: 'pickup',
+  training: 'training'
 }
 
 async function searchProfiles(queryObject) {
   console.log('perfoming search')
-
   const res = []
 
-  for await (const key of Object.keys(queryObject)) {
+  for (const key in queryObject) {
     if (queryObject[key]) {
       const constructedQuery = query(collection(db, 'Profile'), where(keyMap[key], '==', key))
       const querySnapshot = await getDocs(constructedQuery)
       querySnapshot.forEach(doc => {
         const data = doc.data()
-        console.log({ data })
-        res.push(data)
-        console.log('hit')
+        if (!res.find(i => i.email === data.email)) {
+          res.push(data)
+        }
       })
     }
   }
 
-  console.log({ res })
   return res
 }
 

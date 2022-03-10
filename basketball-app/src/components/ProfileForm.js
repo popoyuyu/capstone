@@ -28,7 +28,8 @@ function ProfileForm(props) {
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder='Enter your name' />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" />
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
         <select name="selectLevel" id="selectLevel">
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>

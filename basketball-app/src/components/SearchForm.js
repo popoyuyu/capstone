@@ -1,11 +1,32 @@
 import React from "react";
+import { searchProfiles } from '../firebase'
 
 function SearchForm() {
+
+  const onSubmit = async e => {
+    e.preventDefault()
+    const target = e.target
+    const query = {
+      beginner: target.beginner.checked,
+      intermediate: target.intermediate.checked,
+      advanced: target.advanced.checked,
+      morning: target.morning.checked,
+      afternoon: target.afternoon.checked,
+      night: target.night.checked,
+      seattle: target.seattle.checked,
+      renton: target.renton.checked,
+      bellevue: target.bellevue.checked,
+      training: target.training.checked,
+      pickup: target.pickup.checked,
+    }
+    const results = await searchProfiles(query)
+    console.log({ results })
+  }
 
   return (
     <React.Fragment>
       <h2>Filter by:</h2>
-      <form onSubmit={ }>
+      <form onSubmit={onSubmit}>
         <h4>Select Levels:</h4>
         <input type="checkbox" id="beginner" name="beginner" value="beginner" />
         <label for="beginner">Beginner</label>
@@ -41,3 +62,5 @@ function SearchForm() {
     </React.Fragment>
   )
 }
+
+export { SearchForm }
