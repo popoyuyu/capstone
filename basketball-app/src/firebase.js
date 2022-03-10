@@ -24,9 +24,20 @@ async function getProfile(userId) {
   return profile
 }
 
+/*
+  const profileData = {
+    name: 'test',
+    email: 'test@test.com'
+    // ...
+  }
+  setProfile('123', profileData)
+*/
+
 async function setProfile(userId, profileData) {
   const docRef = doc(db, 'Profile', userId)
   const profile = await setDoc(docRef, profileData)
 
   return profile
 }
+
+export { getProfile, setProfile}

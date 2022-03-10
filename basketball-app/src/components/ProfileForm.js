@@ -1,10 +1,27 @@
 import React from 'react'
+import { setProfile } from '../firebase'
 
-function ProfileForm(props) {
+function ProfileForm({ userId }) {
+
+  const onSubmit = e => {
+    e.preventDefault()
+    const target = e.target
+    const profileData = {
+      name: target.name.value,
+      email: target.email.value,
+      selectLevel: target.selectLevel.value,
+      time: target.time.value,
+      location: target.location.value,
+      training: target.training.checked,
+      pickup: target.pickup.checked,
+    }
+    console.log({ userId })
+    // setProfile(userId, profileData)
+  }
 
   return (
     <React.Fragment>
-      <form>
+      <form onSubmit={onSubmit}>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder='Enter your name' />
         <label for="email">Email:</label>
@@ -29,6 +46,7 @@ function ProfileForm(props) {
         <input type="checkbox" id="pickup" name="pickup" value="pickup" />
         <label for="pickup">Pickup Team</label>
 
+        <button type="submit">Submit</button>
       </form>
     </React.Fragment>
   )
