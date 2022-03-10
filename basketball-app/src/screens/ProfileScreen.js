@@ -20,7 +20,8 @@ function ProfileScreen({ user }) {
   if (profileState) {
     return (
       <>
-        <ProfileDetails profileState={profileState} clearProfileState={clearProfileState} />
+        <ProfileDetails title='User details' profileState={profileState} />
+        <button onClick={clearProfileState}>Edit</button>
         <SearchForm />
       </>
     )

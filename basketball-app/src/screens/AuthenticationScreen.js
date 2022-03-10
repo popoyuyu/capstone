@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import '../App.css';
 import { auth } from '../firebase';
-import { Form } from '../components'
+import { AuthenticationForm } from '../components'
 
 function AuthenticationScreen() {
   const [registerEmail, setRegisterEmail] = useState("");
@@ -30,8 +30,8 @@ function AuthenticationScreen() {
 
   return (
     <div className="App">
-      <Form title='Register User' onSetEmail={setRegisterEmail} onSetPassword={setRegisterPassword} onSubmit={register} buttonText='Create User' />
-      <Form title='Login' onSetEmail={setLoginEmail} onSetPassword={setLoginPassword} onSubmit={login} buttonText='Login' />
+      <AuthenticationForm title='Register User' onSetEmail={setRegisterEmail} onSetPassword={setRegisterPassword} onSubmit={register} buttonText='Create User' />
+      <AuthenticationForm title='Login' onSetEmail={setLoginEmail} onSetPassword={setLoginPassword} onSubmit={login} buttonText='Login' />
     </div>
   );
 }

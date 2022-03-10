@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Box from '@mui/material/Box'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CssBaseline from '@mui/material/CssBaseline';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme()
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box display='flex' flexDirection='column' justifyContent='center'>
+        <App />
+      </Box>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
